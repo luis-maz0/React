@@ -6,8 +6,14 @@ export const CounterApp = ({ value})=>{
   
     const [counter, setCounter] = useState( value ); 
 
-    const aumentar = () => {
-        setCounter ( counter + 1)
+    const increaseCounter = () => {
+        setCounter(counter + 1)
+    }
+    const decreaseCounter = () =>{
+        setCounter(counter - 1)
+    }
+    const resetCounter = ()=>{
+        setCounter(value)
     }
 
     return(
@@ -15,7 +21,9 @@ export const CounterApp = ({ value})=>{
             <h1>CounterApp</h1>
             <h2> { counter }</h2>
 
-            <button onClick={ aumentar }>+1</button>
+            <button onClick={ increaseCounter }>+1</button>
+            <button onClick={ decreaseCounter }>-1</button>
+            <button onClick={ resetCounter  }>Reset</button>
         </>
     )
 }
