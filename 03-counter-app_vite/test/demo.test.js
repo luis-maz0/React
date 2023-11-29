@@ -8,7 +8,7 @@ describe("Primera prueba", ()=>{
         const mensaje2 = mensaje1.trim();
     
         //3. Observar el comportamiento esperado
-        expect( mensaje1 ).to( mensaje2); 
+        expect( mensaje1 ).toBe( mensaje2); 
         
     })
 })
