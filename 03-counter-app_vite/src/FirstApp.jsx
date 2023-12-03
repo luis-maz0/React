@@ -16,19 +16,18 @@ export const FirstApp = ( {saludo, edad, nombre } )=> {
             <p> {true } </p>
             <code>Visualizar objeto:  {JSON.stringify(objeto)} </code>
              */}
-             <h1>{saludo} {nombre}, {edad} </h1>
-             
+             <h1 data-testid="test-saludo">{saludo}</h1>
+             <p data-testid="test-p">{nombre}, {edad}</p>
         </>
 )}
 
 FirstApp.propTypes = {
-    saludo: PropTypes.string,
+    saludo: PropTypes.string.isRequired,
     edad: PropTypes.number,
     nombre: PropTypes.string
 };
 
 FirstApp.defaultProps = {
-    saludo: "NO HAY TITULO",
     nombre: "NO HAY NOMBRE",
     edad: 0
 }
