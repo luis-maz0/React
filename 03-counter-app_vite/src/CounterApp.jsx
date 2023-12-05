@@ -1,7 +1,6 @@
 import { useState } from "react";
 import PropTypes from "prop-types"; 
 
-
 export const CounterApp = ({ value})=>{
   
     const [counter, setCounter] = useState( value ); 
@@ -23,7 +22,7 @@ export const CounterApp = ({ value})=>{
 
             <button onClick={ increaseCounter }>+1</button>
             <button onClick={ decreaseCounter }>-1</button>
-            <button onClick={ resetCounter  }>Reset</button>
+            <button aria-label="btn-reset" onClick={ resetCounter  }>Reset</button>
         </>
     )
 }

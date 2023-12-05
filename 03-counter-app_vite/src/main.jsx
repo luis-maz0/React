@@ -8,6 +8,6 @@ import { CounterApp } from "./CounterApp";
 ReactDOM.createRoot( document.querySelector("#root")).render( 
     <React.StrictMode>
         {/* <FirstApp saludo="Titulo"/> */}
-        <CounterApp value={ 5 }/>
+        <CounterApp value={ 100 }/>
     </React.StrictMode>
 )
